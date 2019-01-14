@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">CreateBase_MVP</string>
+    <string name="btn_login">Login</string>
+    <string name="error_user_name">User is empty .</string>
+    <string name="error_pass_word">Password is empty .</string>
+    <string name="app_name">CreateBaseMvp</string>
 </resources>
