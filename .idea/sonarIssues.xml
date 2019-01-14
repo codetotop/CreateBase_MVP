@@ -48,6 +48,36 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_children_list/SourceChildrenListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_information_detail/SourceInformationDetailContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_information_detail/SourceInformationDetailInteractor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/activity_source_children_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/activity_source_information_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/fragment_source__information_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
