@@ -35,7 +35,6 @@ public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActi
     return new HomeActivityPresenter();
   }
 
-
   @Override
   public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
     switch (menuItem.getItemId()) {
