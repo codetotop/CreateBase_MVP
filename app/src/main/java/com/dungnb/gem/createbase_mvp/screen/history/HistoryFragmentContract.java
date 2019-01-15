@@ -1,8 +1,8 @@
-package com.dungnb.gem.createbase_mvp.screen.home.fragment;
+package com.dungnb.gem.createbase_mvp.screen.history;
 
 import com.dungnb.gem.createbase_mvp.base.fragment.mvp.BaseFragmentContract;
 
-public interface HomeFragmentContract {
+public interface HistoryFragmentContract {
   interface Presenter extends BaseFragmentContract.Presenter<View> {
 
   }

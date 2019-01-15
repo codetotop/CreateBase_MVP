@@ -7,9 +7,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
-import com.dungnb.gem.createbase_mvp.R;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.ButterKnife;
@@ -58,31 +55,31 @@ public abstract class BaseActivityView<P extends BaseActivityContract.Presenter>
     FragmentTransaction transaction = manager.beginTransaction();
     List<Fragment> listChildren = manager.getFragments();
     if (listChildren.isEmpty()) {
-      addChildrentFragment(fragment, containerId, addToBackStack, tag);
+      addChildrentFragment(listChildren, fragment, containerId, addToBackStack, tag);
     } else {
       Fragment fm = manager.findFragmentByTag(tag);
+
+      for (Fragment fragment1 : listChildren) {
+        if (fm != fragment1)
+          transaction.hide(fragment1);
+      }
       if (fm != null) {
-        showChildrentFragment(listChildren, fragment);
+        showChildrenFragment(listChildren, fm);
       } else {
-        addChildrentFragment(fragment, containerId, addToBackStack, tag);
+        addChildrentFragment(listChildren, fragment, containerId, addToBackStack, tag);
       }
     }
     transaction.commit();
   }
 
-  private void showChildrentFragment(List<Fragment> listChildren, Fragment fragment) {
+  private void showChildrenFragment(List<Fragment> listChildren, Fragment fragment) {
     FragmentManager manager = getSupportFragmentManager();
     FragmentTransaction transaction = manager.beginTransaction();
-    for (Fragment fragment1 : listChildren) {
-      if (fragment1 != fragment) {
-        transaction.hide(fragment1);
-      }
-    }
     transaction.show(fragment);
     transaction.commit();
   }
 
-  private void addChildrentFragment(Fragment fragment, int ContainerId, boolean addToBackStack, String tag) {
+  private void addChildrentFragment(List<Fragment> listChildren, Fragment fragment, int ContainerId, boolean addToBackStack, String tag) {
     FragmentManager manager = getSupportFragmentManager();
     FragmentTransaction transaction = manager.beginTransaction();
     transaction.add(ContainerId, fragment, fragment.getClass().getSimpleName());

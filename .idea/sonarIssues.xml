@@ -38,6 +38,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/businessmodel/SourceInformationJudgeDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/businessmodel/SourceInformationMaintainDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/model/DayOfWeek.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/model/SourceInformationJudge.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/model/SourceInformationMaintain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/login/forgotpassword/ForgotPasswordInteractor.java">
           <value>
             <set />
@@ -48,7 +73,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_children_list/SourceChildrenAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_children_list/SourceChildrenListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_children_list/SourceChildrenListContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_children_list/SourceChildrenListInteractor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_children_list/SourceChildrenListPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_information_detail/SourceInformationDetailAdapter.java">
           <value>
             <set />
           </value>
@@ -58,7 +108,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_information_detail/SourceInformationDetailFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_information_detail/SourceInformationDetailInteractor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_type_list/SourceTypeListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/utils/DateTimeUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/webservice/content/VidaGisRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/webservice/content/VidaGisService.java">
           <value>
             <set />
           </value>
@@ -73,7 +148,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/activity_source_type_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/fragment_source__information_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/layout_normal_header.xml">
           <value>
             <set />
           </value>
@@ -139,6 +224,36 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/Home/HomePresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/history/HistoryContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/history/HistoryFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/history/HistoryFragmentContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/history/HistoryFragmentPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/history/HistoryPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/history/HistoryfragmentPresenter.java">
           <value>
             <set />
           </value>
@@ -228,6 +343,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/home/fragment/Fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/home/fragment/FragmentPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/home/fragment/HomeContract.java">
           <value>
             <set />
@@ -248,6 +373,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/home/history/HistoryFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/home/history/HistoryFragmentContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/home/history/HistoryfragmentPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/login/LoginActivity.java">
           <value>
             <set />
@@ -263,6 +403,41 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/more/MoreFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/more/MoreFragmentContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/dungnb/gem/createbase_mvp/screen/more/MoreFragmentPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/color/bnv_color_item_selected.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_history.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable/ic_more.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
           <value>
             <set />
@@ -273,12 +448,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_more.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/menu/bottom_bar_menu.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
           <value>
             <set />
           </value>

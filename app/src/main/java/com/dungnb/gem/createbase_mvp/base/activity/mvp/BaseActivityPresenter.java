@@ -2,7 +2,7 @@ package com.dungnb.gem.createbase_mvp.base.activity.mvp;
 
 import android.content.Context;
 
-public class BaseActivityPresenter<V extends BaseActivityContract.View> implements BaseActivityContract.Presenter<V> {
+public abstract class BaseActivityPresenter<V extends BaseActivityContract.View> implements BaseActivityContract.Presenter<V> {
   V view;
 
   @Override
