@@ -1,4 +1,4 @@
-package com.dungnb.gem.createbase_mvp.base.activity.mvp;
+package com.dungnb.gem.createbase_mvp.base.pattern_mvp.activity;
 
 import android.content.Context;
 

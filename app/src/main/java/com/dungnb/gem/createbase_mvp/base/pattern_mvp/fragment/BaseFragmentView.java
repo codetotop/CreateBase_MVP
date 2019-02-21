@@ -1,4 +1,4 @@
-package com.dungnb.gem.createbase_mvp.base.fragment.mvp;
+package com.dungnb.gem.createbase_mvp.base.pattern_mvp.fragment;
 
 import android.content.Context;
 import android.os.Bundle;

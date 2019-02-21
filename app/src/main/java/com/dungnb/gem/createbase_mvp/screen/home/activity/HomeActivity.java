@@ -7,7 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
 
 import com.dungnb.gem.createbase_mvp.R;
-import com.dungnb.gem.createbase_mvp.base.activity.mvp.BaseActivityView;
+import com.dungnb.gem.createbase_mvp.base.pattern_mvp.activity.BaseActivityView;
 import com.dungnb.gem.createbase_mvp.screen.history.HistoryFragment;
 import com.dungnb.gem.createbase_mvp.screen.history.HistoryFragmentPresenter;
 import com.dungnb.gem.createbase_mvp.screen.home.fragment.HomeFragment;
@@ -48,13 +48,13 @@ public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActi
   private void onNavigationFragment(int itemId) {
     switch (itemId) {
       case R.id.menuHome:
-        addOrShowChildrenFragment(new HomeFragmentPresenter().getFragment(), R.id.container, false, HomeFragment.class.getSimpleName());
+        addOrShowChildrenFragment(R.id.container, new HomeFragmentPresenter().getFragment(), null, false, HomeFragment.class.getSimpleName());
         break;
       case R.id.menuHistory:
-        addOrShowChildrenFragment(new HistoryFragmentPresenter().getFragment(), R.id.container, false, HistoryFragment.class.getSimpleName());
+        addOrShowChildrenFragment(R.id.container, new HistoryFragmentPresenter().getFragment(), null, false, HistoryFragment.class.getSimpleName());
         break;
       case R.id.menuMore:
-        addOrShowChildrenFragment(new MoreFragmentPresenter().getFragment(), R.id.container, false, MoreFragment.class.getSimpleName());
+        addOrShowChildrenFragment(R.id.container, new MoreFragmentPresenter().getFragment(), null, false, MoreFragment.class.getSimpleName());
         break;
       default:
         break;

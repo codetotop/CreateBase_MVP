@@ -1,6 +1,6 @@
 package com.dungnb.gem.createbase_mvp.screen.home.fragment;
 
-import com.dungnb.gem.createbase_mvp.base.fragment.mvp.BaseFragmentPresenter;
+import com.dungnb.gem.createbase_mvp.base.pattern_mvp.fragment.BaseFragmentPresenter;
 
 public class HomeFragmentPresenter extends BaseFragmentPresenter<HomeFragmentContract.View> implements HomeFragmentContract.Presenter {
 

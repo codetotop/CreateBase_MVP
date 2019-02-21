@@ -1,6 +1,6 @@
 package com.dungnb.gem.createbase_mvp.screen.login;
 
-import com.dungnb.gem.createbase_mvp.base.activity.mvp.BaseActivityPresenter;
+import com.dungnb.gem.createbase_mvp.base.pattern_mvp.activity.BaseActivityPresenter;
 
 public class LoginPresenterPresenter extends BaseActivityPresenter<LoginContract.LoginView> implements LoginContract.LoginPresenter {
 

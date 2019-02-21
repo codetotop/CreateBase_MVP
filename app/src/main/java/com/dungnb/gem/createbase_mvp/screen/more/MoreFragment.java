@@ -1,7 +1,7 @@
 package com.dungnb.gem.createbase_mvp.screen.more;
 
 import com.dungnb.gem.createbase_mvp.R;
-import com.dungnb.gem.createbase_mvp.base.fragment.mvp.BaseFragmentView;
+import com.dungnb.gem.createbase_mvp.base.pattern_mvp.fragment.BaseFragmentView;
 
 public class MoreFragment extends BaseFragmentView<MoreFragmentContract.Presenter> implements MoreFragmentContract.View {
   @Override

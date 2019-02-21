@@ -6,7 +6,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.dungnb.gem.createbase_mvp.R;
-import com.dungnb.gem.createbase_mvp.base.activity.mvp.BaseActivityView;
+import com.dungnb.gem.createbase_mvp.base.pattern_mvp.activity.BaseActivityView;
 import com.dungnb.gem.createbase_mvp.screen.home.activity.HomeActivity;
 
 import butterknife.BindView;
