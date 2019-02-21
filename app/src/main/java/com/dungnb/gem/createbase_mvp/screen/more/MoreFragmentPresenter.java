@@ -5,7 +5,7 @@ import com.dungnb.gem.createbase_mvp.base.fragment.mvp.BaseFragmentPresenter;
 
 public class MoreFragmentPresenter extends BaseFragmentPresenter<MoreFragmentContract.View> implements MoreFragmentContract.Presenter {
   @Override
-  public MoreFragmentContract.View initView() {
+  public MoreFragmentContract.View createView() {
     return new MoreFragment();
   }
 }

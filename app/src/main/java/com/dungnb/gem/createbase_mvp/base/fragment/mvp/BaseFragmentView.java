@@ -22,6 +22,12 @@ public abstract class BaseFragmentView<P extends BaseFragmentContract.Presenter>
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
     View view = inflater.inflate(getLayoutResId(), container, false);
     mUnbinder = ButterKnife.bind(this, view);
+    view.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
+      }
+    });
     return view;
   }
 
@@ -49,7 +55,7 @@ public abstract class BaseFragmentView<P extends BaseFragmentContract.Presenter>
   }
 
   @Override
-  public Context getMvpContext() {
+  public Context getContext() {
     return getActivity();
   }
 

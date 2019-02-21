@@ -21,10 +21,11 @@ public abstract class BaseActivityView<P extends BaseActivityContract.Presenter>
     super.onCreate(savedInstanceState);
     setContentView(getLayoutResId());
     mUnbinder = ButterKnife.bind(this);
-    mPresenter = initPresenter();
+    mPresenter = createPresenter();
     if (mPresenter != null) {
-      mPresenter.attachView(this);
+      mPresenter.setView(this);
     }
+
   }
 
   protected abstract int getLayoutResId();
@@ -55,7 +56,7 @@ public abstract class BaseActivityView<P extends BaseActivityContract.Presenter>
     FragmentTransaction transaction = manager.beginTransaction();
     List<Fragment> listChildren = manager.getFragments();
     if (listChildren.isEmpty()) {
-      addChildrentFragment(listChildren, fragment, containerId, addToBackStack, tag);
+      addChildrenFragment(fragment, containerId, addToBackStack, tag);
     } else {
       Fragment fm = manager.findFragmentByTag(tag);
 
@@ -64,25 +65,25 @@ public abstract class BaseActivityView<P extends BaseActivityContract.Presenter>
           transaction.hide(fragment1);
       }
       if (fm != null) {
-        showChildrenFragment(listChildren, fm);
+        showChildrenFragment(fm);
       } else {
-        addChildrentFragment(listChildren, fragment, containerId, addToBackStack, tag);
+        addChildrenFragment(fragment, containerId, addToBackStack, tag);
       }
     }
     transaction.commit();
   }
 
-  private void showChildrenFragment(List<Fragment> listChildren, Fragment fragment) {
+  private void showChildrenFragment(Fragment fragment) {
     FragmentManager manager = getSupportFragmentManager();
     FragmentTransaction transaction = manager.beginTransaction();
     transaction.show(fragment);
     transaction.commit();
   }
 
-  private void addChildrentFragment(List<Fragment> listChildren, Fragment fragment, int ContainerId, boolean addToBackStack, String tag) {
+  private void addChildrenFragment(Fragment fragment, int containerId, boolean addToBackStack, String tag) {
     FragmentManager manager = getSupportFragmentManager();
     FragmentTransaction transaction = manager.beginTransaction();
-    transaction.add(ContainerId, fragment, fragment.getClass().getSimpleName());
+    transaction.add(containerId, fragment, tag);
     if (addToBackStack)
       transaction.addToBackStack(tag);
     transaction.commit();

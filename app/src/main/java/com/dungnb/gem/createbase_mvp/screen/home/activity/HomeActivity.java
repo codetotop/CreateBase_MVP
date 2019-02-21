@@ -35,7 +35,7 @@ public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActi
   }
 
   @Override
-  public HomeActivityContract.HomeActivityPresenter initPresenter() {
+  public HomeActivityContract.HomeActivityPresenter createPresenter() {
     return new HomeActivityPresenter();
   }
 

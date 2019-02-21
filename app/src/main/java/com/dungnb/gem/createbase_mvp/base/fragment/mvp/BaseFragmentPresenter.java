@@ -8,7 +8,7 @@ public abstract class BaseFragmentPresenter<V extends BaseFragmentContract.View>
 
 
   public BaseFragmentPresenter() {
-    mView = initView();
+    mView = createView();
     mView.setPresenter(this);
   }
 
@@ -19,7 +19,7 @@ public abstract class BaseFragmentPresenter<V extends BaseFragmentContract.View>
 
   @Override
   public Context getContext() {
-    return mView.getMvpContext();
+    return mView.getContext();
   }
 
   @Override

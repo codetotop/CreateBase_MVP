@@ -25,11 +25,11 @@ public class LoginActivity extends BaseActivityView<LoginContract.LoginPresenter
 
   @Override
   protected int getLayoutResId() {
-    return R.layout.activity_main;
+    return R.layout.activity_login;
   }
 
   @Override
-  public LoginContract.LoginPresenter initPresenter() {
+  public LoginContract.LoginPresenter createPresenter() {
     return new LoginPresenterPresenter();
   }
 

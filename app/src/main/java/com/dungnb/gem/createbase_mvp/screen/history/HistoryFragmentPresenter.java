@@ -4,7 +4,7 @@ import com.dungnb.gem.createbase_mvp.base.fragment.mvp.BaseFragmentPresenter;
 
 public class HistoryFragmentPresenter extends BaseFragmentPresenter<HistoryFragmentContract.View> implements HistoryFragmentContract.Presenter {
   @Override
-  public HistoryFragmentContract.View initView() {
+  public HistoryFragmentContract.View createView() {
     return new HistoryFragment();
   }
 }

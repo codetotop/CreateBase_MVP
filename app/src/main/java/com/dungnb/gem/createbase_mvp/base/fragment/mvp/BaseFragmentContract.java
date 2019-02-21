@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 
 public interface BaseFragmentContract {
   interface Presenter<V extends View> {
-    V initView();
+    V createView();
 
     V getView();
 
@@ -19,6 +19,6 @@ public interface BaseFragmentContract {
 
     P getPresenter();
 
-    Context getMvpContext();
+    Context getContext();
   }
 }

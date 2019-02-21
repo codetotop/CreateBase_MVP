@@ -16,7 +16,7 @@ public abstract class BaseActivityPresenter<V extends BaseActivityContract.View>
   }
 
   @Override
-  public void attachView(V view) {
+  public void setView(V view) {
     this.view = view;
   }
 }

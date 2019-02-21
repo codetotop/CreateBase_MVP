@@ -6,16 +6,14 @@ public interface BaseActivityContract {
   interface Presenter<V extends View> {
     V getView();
 
+    void setView(V view);
+
     Context getContext();
-
-    void attachView(V view);
-
   }
 
   interface View<P extends Presenter> {
     P getPresenter();
 
-    P initPresenter();
-
+    P createPresenter();
   }
 }

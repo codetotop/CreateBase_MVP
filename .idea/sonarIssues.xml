@@ -8,6 +8,71 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/java/com/dungnb/gem/supperrecyclerview/base/activity/BaseActivityContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/java/com/dungnb/gem/supperrecyclerview/base/activity/BaseActivityInteractor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/java/com/dungnb/gem/supperrecyclerview/base/activity/BaseActivityPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/java/com/dungnb/gem/supperrecyclerview/base/activity/BaseActivityView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/java/com/dungnb/gem/supperrecyclerview/screen/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/java/com/dungnb/gem/supperrecyclerview/screen/MainContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/java/com/dungnb/gem/supperrecyclerview/screen/MainInteractor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/res/layout/layout_empty_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/res/layout/layout_load_more.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/res/layout/layout_loading.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/SupperRecyclerView/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/mobitv_android/Bitbucket/app/build.gradle">
           <value>
             <set />
@@ -38,6 +103,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/common/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/businessmodel/NoteTicketDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/businessmodel/SourceInformationJudgeDTO.java">
           <value>
             <set />
@@ -53,12 +128,82 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/model/NoteTicket.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/model/SourceInformationDetail.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/model/SourceInformationJudge.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/model/SourceInformationMaintain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/pojo/response/AssetsResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/project/list/adapter/NoteTicketAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/TicketDetailActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/TicketInformationActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/TicketInformationContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/TicketInformationInteractor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/TicketInformationPresenter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/detail/TicketDetailContract.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/detail/TicketDetailFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/detail/TicketDetailInteractor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/detail/TicketDetailIntoractor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/detail/ticket/detail/TicketDetailPresenter.java">
           <value>
             <set />
           </value>
@@ -118,6 +263,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_information_list/SourceInformationListActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/java/com/vidawater/vidagis/screen/search_information/source_type_list/SourceTypeListActivity.java">
           <value>
             <set />
@@ -138,6 +288,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/drawable/loading_progress.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/activity_source_children_list.xml">
           <value>
             <set />
@@ -153,12 +308,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/fragment_detail_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/fragment_detail_ticket.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/fragment_source__information_detail.xml">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/fragment_ticket_detail.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/layout_loading.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/layout/layout_normal_header.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GEM/vidagis_android/app/src/main/res/values/strings.xml">
           <value>
             <set />
           </value>
