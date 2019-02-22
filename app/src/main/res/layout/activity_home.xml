@@ -1,26 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
     <LinearLayout
         android:id="@+id/container"
-        android:layout_width="match_parent"
+        android:layout_width="411dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/bottomBarView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.design.widget.BottomNavigationView
+    <com.dungnb.gem.createbase_mvp.widget.MenuNavigationView
         android:id="@+id/bottomBarView"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorWhite"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="@dimen/space_20dp"
         app:itemIconTint="@color/bnv_color_item_selected"
         app:itemTextColor="@color/bnv_color_item_selected"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toTopOf="@+id/underlinePageIndicator"
         app:layout_constraintTop_toBottomOf="@id/container"
         app:menu="@menu/bottom_bar_menu" />
+
+    <com.viewpagerindicator.UnderlinePageIndicator
+        android:id="@+id/underlinePageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:fades="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:selectedColor="@color/colorMenuItemActive" />
+
 </android.support.constraint.ConstraintLayout>

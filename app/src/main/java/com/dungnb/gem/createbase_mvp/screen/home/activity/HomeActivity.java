@@ -4,29 +4,61 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.view.ViewPager;
 import android.view.MenuItem;
 
 import com.dungnb.gem.createbase_mvp.R;
+import com.dungnb.gem.createbase_mvp.adapter.BottomBarPagerAdapter;
 import com.dungnb.gem.createbase_mvp.base.pattern_mvp.activity.BaseActivityView;
+import com.dungnb.gem.createbase_mvp.base.pattern_mvp.fragment.BaseFragmentContract;
 import com.dungnb.gem.createbase_mvp.screen.history.HistoryFragment;
 import com.dungnb.gem.createbase_mvp.screen.history.HistoryFragmentPresenter;
 import com.dungnb.gem.createbase_mvp.screen.home.fragment.HomeFragment;
 import com.dungnb.gem.createbase_mvp.screen.home.fragment.HomeFragmentPresenter;
 import com.dungnb.gem.createbase_mvp.screen.more.MoreFragment;
 import com.dungnb.gem.createbase_mvp.screen.more.MoreFragmentPresenter;
+import com.dungnb.gem.createbase_mvp.widget.MenuNavigationView;
+import com.viewpagerindicator.UnderlinePageIndicator;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
 
-public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActivityPresenter> implements HomeActivityContract.HomeActivityView, BottomNavigationView.OnNavigationItemSelectedListener {
+public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActivityPresenter> implements HomeActivityContract.HomeActivityView {
 
+  @BindView(R.id.vpHome)
+  ViewPager mViewPager;
   @BindView(R.id.bottomBarView)
-  BottomNavigationView mBottomNavigationView;
+  MenuNavigationView mBottomNavigationView;
+  @BindView(R.id.underlinePageIndicator)
+  UnderlinePageIndicator mUnderlinePageIndicator;
+  BottomBarPagerAdapter mBottomBarPagerAdapter;
 
   @Override
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    onNavigationFragment(R.id.menuHome);
-    mBottomNavigationView.setOnNavigationItemSelectedListener(this);
+    //onNavigationFragment(R.id.menuHome);
+    //mBottomNavigationView.setOnNavigationItemSelectedListener(this);
+    addControls();
+  }
+
+  private void addControls() {
+
+    mBottomBarPagerAdapter = new BottomBarPagerAdapter(getSupportFragmentManager(), getPresenters());
+    mViewPager.setAdapter(mBottomBarPagerAdapter);
+    mViewPager.setOffscreenPageLimit(4);
+    mBottomNavigationView.setupWithViewPager(mViewPager, true);
+    mUnderlinePageIndicator.setViewPager(mViewPager);
+  }
+
+  private ArrayList<BaseFragmentContract.Presenter> getPresenters() {
+    ArrayList<BaseFragmentContract.Presenter> presenters = new ArrayList<>();
+    presenters.add(new HomeFragmentPresenter());
+    presenters.add(new HistoryFragmentPresenter());
+    presenters.add(new HomeFragmentPresenter());
+    presenters.add(new MoreFragmentPresenter());
+
+    return presenters;
   }
 
   @Override
@@ -39,7 +71,7 @@ public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActi
     return new HomeActivityPresenter();
   }
 
-  @Override
+  /*@Override
   public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
     onNavigationFragment(menuItem.getItemId());
     return false;
@@ -50,7 +82,7 @@ public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActi
       case R.id.menuHome:
         addOrShowChildrenFragment(R.id.container, new HomeFragmentPresenter().getFragment(), null, false, HomeFragment.class.getSimpleName());
         break;
-      case R.id.menuHistory:
+      case R.id.menuNews:
         addOrShowChildrenFragment(R.id.container, new HistoryFragmentPresenter().getFragment(), null, false, HistoryFragment.class.getSimpleName());
         break;
       case R.id.menuMore:
@@ -59,5 +91,5 @@ public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActi
       default:
         break;
     }
-  }
+  }*/
 }
