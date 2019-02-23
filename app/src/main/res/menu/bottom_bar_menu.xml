@@ -3,26 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/menuHome"
-        android:enabled="true"
         android:icon="@drawable/ic_home"
         android:title="Home"
-        app:showAsAction="ifRoom" />
+        />
     <item
         android:id="@+id/menuNews"
-        android:enabled="true"
         android:icon="@drawable/ic_news"
         android:title="News"
-        app:showAsAction="ifRoom" />
+        />
     <item
         android:id="@+id/menuCart"
-        android:enabled="true"
         android:icon="@drawable/ic_shoping"
         android:title="Cart"
-        app:showAsAction="ifRoom" />
+         />
     <item
         android:id="@+id/menuMore"
-        android:enabled="true"
-        android:icon="@drawable/ic_more"
+        android:icon="@drawable/ic_menu"
         android:title="More"
-        app:showAsAction="ifRoom" />
+        />
 </menu>

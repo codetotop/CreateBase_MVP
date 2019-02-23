@@ -1,21 +1,16 @@
 package com.dungnb.gem.createbase_mvp.screen.home.activity;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
-import android.view.MenuItem;
+import android.view.View;
 
 import com.dungnb.gem.createbase_mvp.R;
 import com.dungnb.gem.createbase_mvp.adapter.BottomBarPagerAdapter;
 import com.dungnb.gem.createbase_mvp.base.pattern_mvp.activity.BaseActivityView;
 import com.dungnb.gem.createbase_mvp.base.pattern_mvp.fragment.BaseFragmentContract;
-import com.dungnb.gem.createbase_mvp.screen.history.HistoryFragment;
 import com.dungnb.gem.createbase_mvp.screen.history.HistoryFragmentPresenter;
-import com.dungnb.gem.createbase_mvp.screen.home.fragment.HomeFragment;
 import com.dungnb.gem.createbase_mvp.screen.home.fragment.HomeFragmentPresenter;
-import com.dungnb.gem.createbase_mvp.screen.more.MoreFragment;
 import com.dungnb.gem.createbase_mvp.screen.more.MoreFragmentPresenter;
 import com.dungnb.gem.createbase_mvp.widget.MenuNavigationView;
 import com.viewpagerindicator.UnderlinePageIndicator;
@@ -48,7 +43,7 @@ public class HomeActivity extends BaseActivityView<HomeActivityContract.HomeActi
     mViewPager.setAdapter(mBottomBarPagerAdapter);
     mViewPager.setOffscreenPageLimit(4);
     mBottomNavigationView.setupWithViewPager(mViewPager, true);
-    mUnderlinePageIndicator.setViewPager(mViewPager);
+    mUnderlinePageIndicator.setViewPager(mViewPager, 0);
   }
 
   private ArrayList<BaseFragmentContract.Presenter> getPresenters() {

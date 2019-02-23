@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:id="@+id/container"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,30 +19,49 @@
         android:id="@+id/vpHome"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/bottomBarView"
+        app:layout_constraintBottom_toTopOf="@id/lnBottomBar"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.dungnb.gem.createbase_mvp.widget.MenuNavigationView
-        android:id="@+id/bottomBarView"
+    <LinearLayout
+        android:id="@+id/lnBottomBar"
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/colorWhite"
-        app:itemHorizontalTranslationEnabled="false"
-        app:itemIconSize="@dimen/space_20dp"
-        app:itemIconTint="@color/bnv_color_item_selected"
-        app:itemTextColor="@color/bnv_color_item_selected"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toTopOf="@+id/underlinePageIndicator"
-        app:layout_constraintTop_toBottomOf="@id/container"
-        app:menu="@menu/bottom_bar_menu" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <com.viewpagerindicator.UnderlinePageIndicator
-        android:id="@+id/underlinePageIndicator"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        app:fades="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:selectedColor="@color/colorMenuItemActive" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/palePurple"
+            android:layout_height="@dimen/size_1dp" />
+
+        <com.dungnb.gem.createbase_mvp.widget.MenuNavigationView
+            android:id="@+id/bottomBarView"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@color/colorWhite"
+            app:itemHorizontalTranslationEnabled="false"
+            app:itemIconSize="@dimen/space_20dp"
+            app:itemIconTint="@color/bnv_color_item_selected"
+            app:itemTextColor="@color/bnv_color_item_selected"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toTopOf="@+id/underlinePageIndicator"
+            app:layout_constraintTop_toBottomOf="@id/container"
+            app:menu="@menu/bottom_bar_menu" />
+
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:id="@+id/underlinePageIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorWhite"
+            app:fades="false"
+            android:backgroundTint="@color/colorWhite"
+            android:backgroundTintMode="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottomBarView"
+            app:selectedColor="@color/colorMenuItemActive" />
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
