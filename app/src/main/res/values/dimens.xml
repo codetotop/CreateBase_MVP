@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="space_40dp">80dp</dimen>
-    <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_small_x">12dp</dimen>
     <dimen name="space_20dp">20dp</dimen>
-    <dimen name="size_2dp">2dp</dimen>
     <dimen name="size_1dp">1dp</dimen>
     <dimen name="menu_navigation_height">52dp</dimen>
     <dimen name="indicator_menu_size">2dp</dimen>
