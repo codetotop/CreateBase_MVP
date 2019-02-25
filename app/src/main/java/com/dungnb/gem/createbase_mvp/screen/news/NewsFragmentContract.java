@@ -1,8 +1,8 @@
-package com.dungnb.gem.createbase_mvp.screen.history;
+package com.dungnb.gem.createbase_mvp.screen.news;
 
 import com.dungnb.gem.createbase_mvp.base.pattern_mvp.fragment.BaseFragmentContract;
 
-public interface HistoryFragmentContract {
+public interface NewsFragmentContract {
   interface Presenter extends BaseFragmentContract.Presenter<View> {
 
   }

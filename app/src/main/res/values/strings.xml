@@ -3,4 +3,9 @@
     <string name="error_user_name">User is empty .</string>
     <string name="error_pass_word">Password is empty .</string>
     <string name="app_name">CreateBaseMvp</string>
+    <string name="menu_home_title">Trang chủ</string>
+    <string name="menu_books_title">Sách hay</string>
+    <string name="menu_cart_title">Mua sắm</string>
+    <string name="menu_more_title">Thêm</string>
+    <string name="menu_news_title">Báo mới</string>
 </resources>

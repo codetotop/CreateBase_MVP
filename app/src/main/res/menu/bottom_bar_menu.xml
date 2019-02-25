@@ -4,21 +4,22 @@
     <item
         android:id="@+id/menuHome"
         android:icon="@drawable/ic_home"
-        android:title="Home"
-        />
+        android:title="@string/menu_home_title" />
     <item
         android:id="@+id/menuNews"
         android:icon="@drawable/ic_news"
-        android:title="News"
-        />
+        android:title="@string/menu_news_title" />
+
     <item
         android:id="@+id/menuCart"
-        android:icon="@drawable/ic_shoping"
-        android:title="Cart"
-         />
+        android:icon="@drawable/ic_cart"
+        android:title="@string/menu_cart_title" />
+    <item
+        android:id="@+id/menuBooks"
+        android:icon="@drawable/ic_books"
+        android:title="@string/menu_books_title" />
     <item
         android:id="@+id/menuMore"
-        android:icon="@drawable/ic_menu"
-        android:title="More"
-        />
+        android:icon="@drawable/ic_menu_more"
+        android:title="@string/menu_more_title" />
 </menu>
