@@ -19,49 +19,51 @@
         android:id="@+id/vpHome"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/lnBottomBar"
+        app:layout_constraintBottom_toTopOf="@id/divisionLine"
         app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/divisionLine"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/size_1dp"
+        android:background="@color/palePurple"
+        app:layout_constraintBottom_toTopOf="@id/menu_container_fl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/lnBottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <View
-            android:layout_width="match_parent"
-            android:background="@color/palePurple"
-            android:layout_height="@dimen/size_1dp" />
+    <FrameLayout
+        android:id="@+id/menu_container_fl"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_navigation_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
         <com.dungnb.gem.createbase_mvp.widget.MenuNavigationView
             android:id="@+id/bottomBarView"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="match_parent"
             android:background="@color/colorWhite"
             app:itemHorizontalTranslationEnabled="false"
             app:itemIconSize="@dimen/space_20dp"
             app:itemIconTint="@color/bnv_color_item_selected"
+            app:itemTextAppearanceActive="@style/TextAppearanceMenuLabelActive"
+            app:itemTextAppearanceInactive="@style/TextAppearanceMenuLabelInactive"
             app:itemTextColor="@color/bnv_color_item_selected"
             app:labelVisibilityMode="labeled"
-            app:layout_constraintBottom_toTopOf="@+id/underlinePageIndicator"
-            app:layout_constraintTop_toBottomOf="@id/container"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:menu="@menu/bottom_bar_menu" />
 
-        <com.viewpagerindicator.UnderlinePageIndicator
-            android:id="@+id/underlinePageIndicator"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/colorWhite"
-            app:fades="false"
-            android:backgroundTint="@color/colorWhite"
-            android:backgroundTintMode="@color/colorWhite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bottomBarView"
-            app:selectedColor="@color/colorMenuItemActive" />
+    </FrameLayout>
 
-    </LinearLayout>
-
-
+    <com.viewpagerindicator.UnderlinePageIndicator
+        android:id="@+id/underlinePageIndicator"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/indicator_menu_size"
+        app:fades="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:selectedColor="@color/colorMenuItemActive" />
 </android.support.constraint.ConstraintLayout>

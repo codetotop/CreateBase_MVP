@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearanceMenuLabelActive">
+        <item name="android:textSize">@dimen/label_menu_item_active_size</item>
+    </style>
+
+    <style name="TextAppearanceMenuLabelInactive">
+        <item name="android:textSize">@dimen/label_menu_item_inactive_size</item>
+    </style>
+</resources>

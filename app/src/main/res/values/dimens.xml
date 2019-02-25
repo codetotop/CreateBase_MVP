@@ -6,4 +6,8 @@
     <dimen name="space_20dp">20dp</dimen>
     <dimen name="size_2dp">2dp</dimen>
     <dimen name="size_1dp">1dp</dimen>
+    <dimen name="menu_navigation_height">52dp</dimen>
+    <dimen name="indicator_menu_size">2dp</dimen>
+    <dimen name="label_menu_item_active_size">11sp</dimen>
+    <dimen name="label_menu_item_inactive_size">11sp</dimen>
 </resources>
